@@ -1,0 +1,43 @@
+.custom-app-footer {
+  background: #111827;
+  border-top: 1px solid #1f2937;
+  padding: 16px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: auto; /* Locks the footer to the bottom of the column wrapper */
+}
+
+.footer-copyright-info p {
+  margin: 0;
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+.footer-copyright-info strong {
+  color: #e5e7eb;
+  font-weight: 500;
+}
+
+.text-divider {
+  color: #4b5563;
+  margin: 0 4px;
+}
+
+.footer-links-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-links-group a {
+  font-size: 13px;
+  color: #9ca3af;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-links-group a:hover {
+  color: #ffffff;
+}

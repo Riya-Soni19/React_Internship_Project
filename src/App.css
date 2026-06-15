@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(
+    135deg,
+    #eef2ff,
+    #f8fafc,
+    #e0f2fe
+  );
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  min-height: 100vh;
+}
+
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.sidebar {
+  width: 90px;
+  background: #14213d;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 25px;
+  gap: 15px;
+  z-index: 1000;
+}
+
+.day-btn {
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  background: #22304f;
+  transition: all 0.2s ease;
+}
+
+.day-btn:hover {
+  background: #2c3d63;
+  transform: translateY(-1px);
+}
+
+.active {
+  background: linear-gradient(
+    135deg,
+    #6d5dfc,
+    #8b5cf6
+  );
+  box-shadow: 0 4px 12px rgba(109, 93, 252, 0.35);
+}
+
+/* Updated content column behavior to safely wrap header/footer inside flex space */
+.content {
+  margin-left: 90px;
+  width: calc(100% - 90px);
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Core inner padding wrapper container for active assignments rows */
+.day-view-container {
+  padding: 40px;
+  flex: 1 0 auto; /* Ensures whitespace expands so footer gets locked to the bottom */
+}
+
+.page-title {
+  text-align: center;
+  color: #4f46e5;
+  font-size: 42px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.small {
+  margin-top: 40px;
+  font-size: 36px;
+}
+
+.nav-btn.active {
+  background: linear-gradient(
+    135deg,
+    #8b5cf6,
+    #6366f1
+  );
+}

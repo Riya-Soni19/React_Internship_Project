@@ -1,0 +1,19 @@
+:root {
+
+  --color-primary: purple;
+  --color-success: green;
+  --color-white: white;
+  --color-light: #e8f5e9;
+
+  --space-sm: 10px;
+  --space-3: 12px;
+  --space-md: 20px;
+  --space-lg: 30px;
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-full: 50%;
+
+  --shadow-md: 0 3px 10px rgba(0,0,0,0.2);
+  --shadow-lg: 0 8px 20px rgba(0,0,0,0.3);
+}

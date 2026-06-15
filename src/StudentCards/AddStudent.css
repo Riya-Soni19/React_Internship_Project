@@ -1,0 +1,223 @@
+.student-section {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.add-btn {
+  background: linear-gradient(135deg, #6d5dfc, #8b5cf6);
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(109, 93, 252, 0.2);
+  transition: all 0.2s ease;
+}
+
+.add-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(109, 93, 252, 0.3);
+}
+
+.student-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+.student-card {
+  width: 240px;
+  min-height: 290px;
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  flex: 0 0 auto;
+  transition: all 0.3s ease;
+  border: 1px solid #e2e8f0;
+}
+
+.student-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+}
+
+.student-card p {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #475569;
+  text-align: left;
+}
+
+.student-card strong {
+  color: #1e293b;
+}
+
+.profile-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 3px solid #10b981;
+  object-fit: cover;
+  margin: 0 auto 15px;
+  display: block;
+}
+
+.contact-btn {
+  background: #10b981;
+  color: #ffffff;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 14px;
+  font-weight: 600;
+  width: 100%;
+  transition: background 0.2s;
+}
+
+.contact-btn:hover {
+  background: #059669;
+}
+
+/* CONTACT DETAIL MODAL BOX STYLING (FIXES THE BLANK SCREEN ISSUE) */
+.contact-modal {
+  position: relative;
+  background: #fdfbf7; /* Classic warm soft tone look */
+  width: 500px;
+  max-width: 92%;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+  text-align: left;
+  animation: modalScaleIn 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes modalScaleIn {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.modal-dismiss-x {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #94a3b8;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.modal-dismiss-x:hover {
+  color: #475569;
+}
+
+.modal-header-block {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 16px;
+  margin-bottom: 20px;
+}
+
+.heart-icon-accent {
+  font-size: 18px;
+  margin-top: 2px;
+}
+
+.modal-header-text h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #6d5dfc;
+  margin: 0;
+}
+
+.modal-subtitle {
+  font-size: 13px;
+  color: #64748b;
+  margin-top: 4px;
+}
+
+/* TWO-COLUMN GRID DATA DISPLAY TABLE */
+.modal-data-table {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.data-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0;
+}
+
+.data-label {
+  font-weight: 700;
+  color: #94a3b8;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.data-value {
+  color: #334155;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.data-link {
+  color: #6d5dfc;
+  text-decoration: none;
+}
+
+/* FOOTER CONTROL AREA ACCORDING TO LAYOUTS */
+.modal-actions-panel {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 16px;
+}
+
+.close-text-btn {
+  background: none;
+  border: none;
+  color: #64748b;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 10px 16px;
+  border-radius: 8px;
+}
+
+.close-text-btn:hover {
+  background-color: #f1f5f9;
+  color: #1e293b;
+}
+
+.send-email-btn {
+  background: linear-gradient(135deg, #6d5dfc, #8b5cf6);
+  color: #ffffff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(109, 93, 252, 0.2);
+  transition: all 0.2s ease;
+}
+
+.send-email-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(109, 93, 252, 0.3);
+}

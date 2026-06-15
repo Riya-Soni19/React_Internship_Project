@@ -1,0 +1,25 @@
+.intro-card {
+  max-width: 900px;
+  margin: 40px auto;
+  background: white;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+}
+
+.intro-card h2 {
+  text-align: center;
+  color: #4f46e5;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.intro-content p {
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.intro-content strong {
+  color: #111827;
+}
